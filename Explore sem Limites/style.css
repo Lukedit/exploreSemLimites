@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+    --ff-headingAndTexting: 'Mulish', sans-serif;
+    
+    --fc-fontColor: hsla(320, 69%, 42%, 1);
+    --fcs-fontColorSecundary:#312D64;
+    font-size: 62.5%;
+    --ff-H1andH2Size:3.2rem;
+    --ff-H1andH2weight: 900; 
+
+}
+body{
+    font-family: var(--ff-headingAndTexting);
+    
+}
+header{
+    background: #F9F4FB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .astronaut{
+    margin: 0 3.4rem 1.7rem;
+   
+}
+.astronaut img{
+    width: 36rem;
+    margin: 0;
+    padding: 0;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title img{
+    margin: 3.5rem 18.5rem 9.3rem;  
+}
+.title img:hover{
+    transform: scale(1.1);
+    transition: all 200ms;
+}
+.title p{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--fcs-fontColorSecundary);
+}
+main{
+    background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+    padding-top: 5.3rem;
+    padding-bottom: 5.3rem;
+
+    display: grid;
+    gap: 5.0rem;
+}
+.cards{
+    border-radius: 1.9rem;
+    background: #FFF;
+    box-shadow: 0px 3px 1.3rem 0px rgba(0, 0, 0, 0.25);
+
+    margin: 0 3.9rem 0;
+
+    display: flex;
+    padding: 2.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.cards:hover{
+    transform: scale(1.1);
+    opacity: 95%;
+    transition: all 200ms;
+}
+.cards h2{
+    font-size: 2.9rem;
+    margin-top: 3.3rem;
+    margin-bottom: 2rem;
+}
+.cards p{
+    font-size: 16.042px;
+    font-weight: 600;
+    color: var(--fcs-fontColorSecundary);
+    
+}
+h1,h2,legend{
+    font-weight: var(--ff-H1andH2weight);
+    font-size: var(--ff-H1andH2Size);
+    color: var(--fc-fontColor);
+
+}
+legend{
+    margin-bottom: 4.3rem;
+}
+fieldset{
+    border: none;
+    margin:7.0rem 4.0rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.names input, .Mail-wrapper input{
+    border-radius: 16px;
+    border: 1.5px solid #312D64;
+    padding: 12px 14px;
+    width: 100%;
+    
+}
+textarea{
+    border-radius: 16px;
+    width: 100%;
+    padding: 12px 14px;
+    height: 12.6rem;
+}
+.button input{
+    height: 4.5rem;
+    width: 15.1rem;
+    border-radius: 16px;
+    background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+    border: none;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--neutral-colors-white, #FFF);
+}
+.foot{
+    background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+    width: 100%;
+    height: 7.8rem; 
+    padding-top: 16px;
+}
+.foot p{
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+
+    font-size: 19.381px;
+    font-style: normal;
+    font-weight: 600;
+
+}
+::placeholder{
+    font-size: 16.042px;
+    font-weight: 600;
+    color: var(--fcs-fontColorSecundary);
+    font-family: var(--ff-headingAndTexting);
+}
+.button input:hover{
+    transform: scale(1.1);
+    transition: all 200ms;
+    background: #090542;
+    color: #FFF;
+    
+}
+.stars img{
+    width: 0%;
+    height: 0%;
+}
+
+@media (min-width: 1440px){
+    header{
+        display: grid;
+       grid-template-areas: "B A";
+        gap: 2.8rem;
+    
+    }
+    .header div:nth-child(1){
+        grid-area: A;
+    }
+ 
+    header div:nth-child(2){
+        grid-area: B;
+    }
+
+.astronaut img{
+    width: 719.36px;
+    height: 732.357px;
+}
+
+.title{
+display: flex;
+flex-direction: column;
+align-items: start;
+
+
+margin-bottom: 13rem;
+margin-left: 10rem;
+}
+.title h1{
+    font-size: 58.287px;
+    width: 56rem;
+
+}
+.title img{
+    margin: 0;
+    margin-top: 17.9rem;
+}
+.title p{
+    font-size: var(--ff-H1andH2Size);
+    width: 53rem;
+}
+.cards{
+    margin: 0;
+    width: 36rem;
+    height: 44.8rem;
+}
+.cards p{
+    font-size: 19.381px;
+}
+.cards h2{
+    font-size: 35.302px;
+}
+fieldset  legend{
+    font-size: 42px;
+}
+main{
+    padding-left: 11rem;
+    padding-right : 11rem;
+    display: flex;
+    gap: 6rem;
+}
+.stars img{
+    width: 100% ;
+    height: 612px;
+
+}
+form{
+    display: grid;
+    grid-template-areas: "A B";
+    gap: 9.2rem; 
+   
+}
+fieldset{
+     margin-left: 10rem  ;
+     width: 59.2rem;
+}
+.foot p{
+margin-top: 1rem;
+}
+   } 
